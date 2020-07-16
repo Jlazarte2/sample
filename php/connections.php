@@ -1,7 +1,10 @@
 <?php
-    $servername = "usyd1.czgixbvgrqdc.us-east-2.rds.amazonaws.com";
-    $username = "admin";
-    $password = "usydadmin";
+    //$servername = "usyd1.czgixbvgrqdc.us-east-2.rds.amazonaws.com";
+    //$username = "admin";
+    //$password = "usydadmin";
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
     $databasename = "ssr_database";
 
     $connections = mysqli_connect($servername, $username, $password, $databasename);
