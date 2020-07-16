@@ -15,8 +15,8 @@ $query = mysqli_query($connections, "SELECT * FROM ssr_tracker WHERE dxc_ssr='$d
 if($query = mysqli_query($connections, "INSERT INTO ssr_snow(dxc_ssr, sys_id, number, state) 
             VALUES ('$dxcssr','$sys_id','$number','$state')")){
 
-            $email = 'darce2@dxc.com';
-            //$email = 'jlazarte2@dxc.com';
+            //$email = 'darce2@dxc.com';
+            $email = 'jlazarte2@dxc.com';
             require 'PHPMailer/PHPMailerAutoload.php';
             $mail = new PHPMailer;
             $mail->IsSMTP();
