@@ -1,7 +1,9 @@
 <?php
+    session_start();
     include ("./connections.php");
     include ("./usydpost.js");
-    session_start();
+    
+
 
     $requestor = $_SESSION['user_email'];
 
@@ -176,7 +178,7 @@
        $_SESSION['end_time'] = $end_time;
        $_SESSION['classification'] = $classification;
        //header("Location: ../newrequest.html");
-       header("Location: ./usyd.php");
+       echo "<script type='text/javascript'>window.location = './usyd.php';</script>";
 
     }
 ?>
